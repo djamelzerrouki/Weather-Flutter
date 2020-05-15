@@ -1,6 +1,10 @@
-# weather
+# weather ☁⛅⛈🌤🌥🌦🌧🌨🌩🌪🌫🌝❄
 
-A new Flutter application.
+Flutter Weather Application.
+Current weather and forecasts in your city
+
+Get current weather, daily forecast for your city 
+
 ![](https://github.com/djamelzerrouki/Weather-Flutter/blob/master/assets/untitled.gif)
 
 ## Getting Started
