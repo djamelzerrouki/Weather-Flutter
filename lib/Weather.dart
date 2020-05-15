@@ -81,7 +81,7 @@ class _WeatherPageState extends State<WeatherPage> {
                         ),
                       ],
                     ),
-                    Text("${(weatherDate['list'][index]['main']['temp']).round()} °C",
+                    Text("${(weatherDate['list'][index]['main']['temp']-272.15).round()} °C",
                       style: TextStyle(color:Colors.lightGreen, fontSize: 22,fontWeight: FontWeight.bold),
                     ),
                   ],
