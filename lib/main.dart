@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './Weather.dart';
 void main() => runApp(MyApp());
@@ -23,6 +24,8 @@ class MyHomePage extends StatefulWidget {
 
 
   @override
+
+
   _MyHomePageState createState() => _MyHomePageState();
 }
 
@@ -32,38 +35,85 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-      appBar: AppBar(
+    return Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("assets/images/imagegif0.gif"), fit: BoxFit.cover)),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
 
-        title: Text(city),
-      ),
-      body:  Column(
+            children: <Widget>[
+              Icon(
+                Icons.add_location,
+                color: Colors.white,
+              ),
+              Text('$city',
+              style: TextStyle(color: Colors.white),),
+            ],
+          ),
+          centerTitle: true,
+          leading: IconButton(
+              icon: Icon(
+                Icons.list,
+                color: Colors.white,
+              ),
+              onPressed: () {}),
+        ),
+
+
+        body:  Column(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                decoration:InputDecoration(hintText: "Writeing the city..."),
-           onChanged: (value){
+
+               TextField(
+style: TextStyle(color: Colors.white),
+                decoration:InputDecoration(hintText: "Writeing the city",
+                  prefixIcon: Icon(Icons.search),
+
+                ),
+
+                   onEditingComplete: (){
+                     Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
+                   },
+                   onChanged: (value){
                   setState(() {
-             city=value;
+                    city=value;
                   });
-           }
-           , ),
-            ),
-RaisedButton(
-  onPressed: (){
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
-  },
-  color: Colors.amber,
-  child: Text("Get Whather",style: TextStyle(color: Colors.black),),
-),
-            Text(
-              '${this.city}',
-              style: Theme.of(context).textTheme.display1,
-            ),
+                }
+                 ),
+//             IconButton(
+//              onPressed: (){
+//                Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
+//              },
+// icon:Icon(Icons.search,color: Colors.amber,),
+//            ),
+
           ],
         ),
 
-     );
+      ),
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 }

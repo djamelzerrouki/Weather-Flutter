@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:weather/main.dart';
+ import 'package:intl/intl.dart';
 
 class WeatherPage extends StatefulWidget {
   String city = "";
@@ -44,8 +44,8 @@ class _WeatherPageState extends State<WeatherPage> {
                     backgroundImage: AssetImage(
                         "assets/images/${weatherDate['list'][index]['weather'][0]['main'].toString().toLowerCase()}.png"),
                   ),
-                  Text(weatherDate['list'][index]['dt'].toString()),
-                  Text(weatherDate['list'][index]['main']['temp'].toString()),
+                  Text("${new DateFormat('E-dd/MM/yyyy').format(DateTime.fromMicrosecondsSinceEpoch(weatherDate['list'][index]['dt']*1000000))}" ),
+                  Text("${(weatherDate['list'][index]['main']['temp']).round()} °C"),
 
                 ],
               ),
