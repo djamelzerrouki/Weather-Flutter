@@ -1,6 +1,7 @@
 # weather
 
 A new Flutter application.
+![](https://github.com/djamelzerrouki/Weather-Flutter/blob/master/assets/untitled.gif)
 
 ## Getting Started
 
