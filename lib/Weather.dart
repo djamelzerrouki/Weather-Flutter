@@ -41,7 +41,8 @@ class _WeatherPageState extends State<WeatherPage> {
                 children: <Widget>[
                   CircleAvatar(
                     //images/
-                    backgroundImage: AssetImage(""),
+                    backgroundImage: AssetImage(
+                        "assets/images/${weatherDate['list'][index]['weather'][0]['main'].toString().toLowerCase()}.png"),
                   ),
                   Text(weatherDate['list'][index]['dt'].toString()),
                   Text(weatherDate['list'][index]['main']['temp'].toString()),
