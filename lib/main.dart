@@ -9,7 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner:false ,
+       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
@@ -48,16 +49,27 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.end,
 
             children: <Widget>[
-              Icon(
-                Icons.add_location,
-                color: Colors.white,
-              ),
+              IconButton(
+                  icon: Row(
+                    children: <Widget>[
+                      Icon(
+                          Icons.location_on,
+                          color: Colors.amber,
+                        ),
+
+
+                    ],
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
+                  }),
               Text('$city',
-              style: TextStyle(color: Colors.white),),
+              style: TextStyle(color: Colors.amber),),
             ],
           ),
           centerTitle: true,
           leading: IconButton(
+
               icon: Icon(
                 Icons.list,
                 color: Colors.white,
@@ -69,22 +81,24 @@ class _MyHomePageState extends State<MyHomePage> {
         body:  Column(
           children: <Widget>[
 
-               TextField(
+               Padding(
+                 padding: const EdgeInsets.all(8.0),
+                 child: TextField(
 style: TextStyle(color: Colors.white),
-                decoration:InputDecoration(hintText: "Writeing the city",
-                  prefixIcon: Icon(Icons.search),
+                  decoration:InputDecoration(hintText: "Write a city",
+                    prefixIcon: Icon(Icons.search),
+                  ),
 
-                ),
-
-                   onEditingComplete: (){
-                     Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
-                   },
-                   onChanged: (value){
-                  setState(() {
-                    city=value;
-                  });
-                }
-                 ),
+                     onEditingComplete: (){
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
+                     },
+                     onChanged: (value){
+                    setState(() {
+                      city=value;
+                    });
+                  }
+                   ),
+               ),
 //             IconButton(
 //              onPressed: (){
 //                Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
