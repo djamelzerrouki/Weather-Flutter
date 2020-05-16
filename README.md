@@ -44,8 +44,23 @@ samples, guidance on mobile development, and a full API reference.
 * Internet connection
 * key of https://openweathermap.org/
 
-## Libraries used
- * JSON (JSON Parser)
+## Dependencies & Libraries used
+ * http
+ * intl
+ *  cupertino_icons: ^0.1.2
+ 
+        dependencies:
+         flutter:
+             sdk: flutter
+             http: ^0.12.1
+             intl:
+        # The following adds the Cupertino Icons font to your application.
+        # Use with the CupertinoIcons class for iOS style icons.
+          cupertino_icons: ^0.1.2
+
+        
+  
+ 
 
 ## Installation
 1. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
