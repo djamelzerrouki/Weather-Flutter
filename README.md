@@ -5,7 +5,13 @@ Current weather and forecasts in your city
 
 Get current weather, daily forecast for your city 
 
-![](https://github.com/djamelzerrouki/Weather-Flutter/blob/master/assets/untitled.gif)
+
+## Screenshots
+Home page           | Select your city
+:---------------------:|:------------------:
+![Home page](assets/Capture1.PNG) | ![select city](assets/Capture2.PNG)
+Result  ( Weather of city selected )           |  Gif (Weather of city)
+![Result ](assets/Capture3.PNG) | <img src="assets/untitled.gif" width="450"/>
 
 Youtube: https://www.youtube.com/watch?v=jaKGsoVRw4E
 
