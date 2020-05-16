@@ -15,7 +15,7 @@ Result  ( Weather of city selected )           |  Gif (Weather of city)
 
 Youtube: https://www.youtube.com/watch?v=jaKGsoVRw4E
 
-## Getting Started
+# Getting Started
 
 This project is a Flutter application that allows us to see the weather conditions, after determining the city and thus returns you with a list showing the weather conditions at the expense of time.
 
