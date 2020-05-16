@@ -25,6 +25,7 @@ Some resources to get started with such a Flutter project:
 - [Data & backend](https://flutter.dev/docs/development/data-and-backend/networking)
 - [Networking](https://flutter.dev/docs/development/data-and-backend/networking)
 - [JSON and serialization](https://flutter.dev/docs/development/data-and-backend/json)
+
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
