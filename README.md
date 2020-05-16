@@ -46,25 +46,53 @@ samples, guidance on mobile development, and a full API reference.
 * Internet connection
 * key of https://openweathermap.org/
 
-## Dependencies & Libraries used
+
+
+# Installing
+
+### 1. Depend on it
+Add this to your package's `pubspec.yaml` file:
+
  * http
  * intl
  *  cupertino_icons: ^0.1.2
- 
-        dependencies:
-         flutter:
-             sdk: flutter
+
+```yaml
+dependencies:
+  sdk: flutter
              http: ^0.12.1
              intl:
-        # The following adds the Cupertino Icons font to your application.
-        # Use with the CupertinoIcons class for iOS style icons.
-          cupertino_icons: ^0.1.2
+             cupertino_icons: ^0.1.2
+```
 
-        
-  
- 
+### 2. Install it
 
-## Installation
+You can install packages from the command line:
+
+with `pub`:
+
+```css
+$ pub get
+```
+
+with `Flutter`:
+
+```css
+$ flutter packages get
+```
+
+### 3. Import it
+
+Now in your `Dart` code, you can use: 
+
+```dart
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:intl/intl.dart';
+```
+
+## Installation  this repository
 1. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
 
        git clone https://github.com/djamelzerrouki/Weather-Flutter.git
