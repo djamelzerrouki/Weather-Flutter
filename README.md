@@ -1,9 +1,8 @@
 # weather ☁⛅⛈🌤🌥🌦🌧🌨🌩🌪🌫🌝❄
 
-Flutter Weather Application.
-Current weather and forecasts in your city
+Flutter Weather Application 📱 💡. Current 📍 weather ⛅⛈🌤 and forecasts in your city 🌎🗺.
 
-Get current weather, daily forecast for your city 
+Get current  📍 weather ⛅⛈🌤, daily forecast for your city🌎🗺
 
 
 ## Screenshots
