@@ -99,12 +99,7 @@ style: TextStyle(color: Colors.white),
                   }
                    ),
                ),
-//             IconButton(
-//              onPressed: (){
-//                Navigator.push(context, MaterialPageRoute(builder: (context)=>WeatherPage(city: city,)));
-//              },
-// icon:Icon(Icons.search,color: Colors.amber,),
-//            ),
+
 
           ],
         ),

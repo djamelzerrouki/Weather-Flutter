@@ -19,8 +19,8 @@ class _WeatherPageState extends State<WeatherPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    getDAta(widget.city);
-  }
+  getDAta(widget.city);
+}
 
   @override
   Widget build(BuildContext context) {
