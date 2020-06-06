@@ -45,6 +45,7 @@ samples, guidance on mobile development, and a full API reference.
 * Internet connection
 * key of https://openweathermap.org/
 
+ 
 
 
 # Installing
